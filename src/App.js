@@ -4,10 +4,11 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './components/home/Home';
 import LoginForm from './components/authenticationform/loginform/LoginForm'
 import RegistrationForm from './components/authenticationform/registration/RegistrationForm'
-
+import { useAuthContext } from './hooks/useAuthContext';
 
 
 function App() {
+  const {user} = useAuthContext();
   return (
     <div className="App">
       <Navbar />
@@ -15,16 +16,16 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/'
-            // element={user ? <Home /> : <Navigate to="/login" />} 
-            element={<Home/>}
+              element={user ? <Home /> : <Navigate to="/login" />}
+            // element={<Home/>}
             />
             <Route path='/login'
-              element={<LoginForm />}
-            // element={!user ? <LoginForm /> : <Navigate to="/" />} 
+              // element={<LoginForm />}
+              element={!user ? <LoginForm /> : <Navigate to="/" />}
             />
             <Route path='/signup'
-              element={<RegistrationForm />}
-            // element={!user ? <RegistrationForm /> : <Navigate to="/" />} 
+              // element={<RegistrationForm />}
+              element={!user ? <RegistrationForm /> : <Navigate to="/" />}
             />
           </Routes>
         </BrowserRouter>

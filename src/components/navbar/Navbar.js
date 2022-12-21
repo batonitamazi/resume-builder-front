@@ -1,9 +1,24 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './navbar.css'
 import { themeContext } from '../../providers/theme.provider'
+import { useAuthContext } from '../../hooks/useAuthContext'
+import { useLogout } from '../../hooks/useLogOut'
+
+
 
 function Navbar() {
+    const { user } = useAuthContext()
     const { changeTheme, theme } = useContext(themeContext)
+    const [open, setOpen] = useState(false)
+    const { logout } = useLogout();
+    const handleLogOut = () => {
+        logout()
+        setOpen(false)
+    }
+    const handleOpenDialog = () => {
+        setOpen(!open)
+    }
+    console.log(open)
     return (
         <div className='navbar'>
             <div className='logo--container'>
@@ -18,7 +33,18 @@ function Navbar() {
                     className='bg--switcher'
                     onClick={() => changeTheme()}
                 />
+                {user ?
+                    <div className='avatar--card' onClick={handleOpenDialog} >
+                        <img src='./assets/image-avatar.jpg' className='avatar--img' alt='avatar' />
+                    </div>
+                    : null}
             </div>
+            {open ?
+                <div className='logout-dialog' onClick={handleLogOut}>
+                    Log Out
+                </div>: null
+            }
+
         </div>
     )
 }

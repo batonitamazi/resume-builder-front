@@ -4,7 +4,7 @@
     height: 400px;
     padding-left: 20px;
     padding-right: 40px;
-    background-color: var(--auth-bg);
+    background-color: var(--dialog-bg);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

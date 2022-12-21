@@ -22,12 +22,47 @@
     justify-content: center;
 }
 .nav--actions {
-    height: 3.5rem;
+    height: 10.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
 }
 .bg--switcher {
     cursor: pointer;
+}
+.avatar--card {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.avatar--img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.avatar--img:hover{
+    border: 2px solid var(--logo-bg);
+}
+.logout-dialog {
+    top: 92%;
+    left: 110%;
+    position: absolute;
+    height: 63px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dialog-bg);
+    color: var(--auth-bg);
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.logout-dialog:hover {
+    color: var(--logo-bg);
 }

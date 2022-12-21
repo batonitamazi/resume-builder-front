@@ -2,14 +2,16 @@
   --background-color: #f8f8fb;
   --navbar-color: #252945;
   --logo-bg: #7c5dfa;
-  --auth-bg: #fff;
+  --auth-bg: #1e2139;
   --font-color: #141625;
+  --dialog-bg: #fff
 
 }
 [data-theme="dark"] {
   --background-color:  #141625;
-  --auth-bg: #1e2139;
+  --auth-bg: #fff;
   --font-color: #f8f8fb;
+  --dialog-bg: #1e2139;
 
 }
 .App {
