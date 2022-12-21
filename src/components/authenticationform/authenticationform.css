@@ -1,0 +1,61 @@
+
+.auth--container {
+    width: 480px;
+    height: 400px;
+    padding-left: 20px;
+    padding-right: 40px;
+    background-color: var(--auth-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7%;
+    align-items: flex-start;
+    border-radius: 0.5rem;
+    color: var(--font-color);
+}
+.auth--form {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15%;
+}
+.auth--header {
+    padding-top: 30px;
+}
+.base--input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #5A698F;
+    color: #FFFFFF;
+}
+.base--input:active {
+    background: none;
+    border: none;
+}
+.auth--btn {
+    height: 13%;
+    width: 100%;
+    color: var(--font-color);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--logo-bg);
+    font-size: 15px;
+    font-weight: 500;
+}
+.lost--acc {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+}
+.signup--span {
+    padding-left: 9px;
+    color: var(--logo-bg);
+    cursor: pointer;
+}
