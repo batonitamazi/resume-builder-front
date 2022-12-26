@@ -4,7 +4,8 @@
   --logo-bg: #7c5dfa;
   --auth-bg: #1e2139;
   --font-color: #141625;
-  --dialog-bg: #fff
+  --dialog-bg: #fff;
+  --paragraph-color: #888eb0;
 
 }
 [data-theme="dark"] {

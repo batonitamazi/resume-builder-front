@@ -18,7 +18,6 @@ function Navbar() {
     const handleOpenDialog = () => {
         setOpen(!open)
     }
-    console.log(open)
     return (
         <div className='navbar'>
             <div className='logo--container'>

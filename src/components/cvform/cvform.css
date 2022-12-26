@@ -1,0 +1,9 @@
+.dialog--container {
+    left: 6.5%;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--dialog-bg);
+    border-radius: 0px 20px 20px 0px;
+    z-index: 4;
+}
