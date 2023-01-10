@@ -1,9 +1,56 @@
 .dialog--container {
+    padding-top: 20px;
+    padding-left: 20px;
     left: 6.5%;
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: var(--dialog-bg);
+    background-color: var(--background-color);
+    color: var(--font-color);
     border-radius: 0px 20px 20px 0px;
     z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.resume-form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main--label {
+    margin-top: 15px;
+    color: var(--logo-bg);
+}
+.input--label {
+    margin-top: 15px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--font-color);
+} 
+.form--input {
+    margin-top: 15px;
+    height: 3rem;
+    background-color: var(--input-bg) !important;
+    color-scheme: var(--input-bg) !important;
+    color: var(--font-color);
+    border: 1px solid #252945;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+}
+.label--container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
